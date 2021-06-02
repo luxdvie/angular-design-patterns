@@ -6,6 +6,7 @@ import { NumericControlComponent } from './controls/numeric-control/numeric-cont
 import { RouterModule, Routes } from '@angular/router';
 import { FactoryPatternDemoComponent } from './factory-pattern-demo/factory-pattern-demo.component';
 import { FormsModule } from '@angular/forms';
+import { FormControlComponent } from './controls/form-control/form-control.component';
 
 const routes: Routes = [
 	{
@@ -24,7 +25,8 @@ const routes: Routes = [
 		FactoryPatternDemoComponent,
 		TextControlComponent,
 		NumericControlComponent,
-		DateControlComponent
+		DateControlComponent,
+		FormControlComponent
 	]
 })
 export class FactoryPatternModule { }

@@ -4,10 +4,10 @@
 		<button (click)="addControl('TextControl')">Add Text Control</button>&nbsp;
 		<button (click)="addControl('NumericControl')">Add Numeric Control</button>&nbsp;
 		<button (click)="addControl('DateControl')">Add Date Control</button>&nbsp;
-		<button (click)="focusControl(1)">Focus Control #1</button>&nbsp;
-		<button (click)="focusControl(2)">Focus Control #2</button>&nbsp;
-		<button (click)="focusControl(3)">Focus Control #3</button>&nbsp;
+		<button (click)="focusControl(0)">Focus Control #1</button>&nbsp;
+		<button (click)="focusControl(1)">Focus Control #2</button>&nbsp;
+		<button (click)="focusControl(2)">Focus Control #3</button>&nbsp;
 	</section>
 
-	<div #containerList *ngFor="let control of controls"></div>
+	<app-form-control *ngFor="let control of controls" [control]="control"></app-form-control>
 </div>
