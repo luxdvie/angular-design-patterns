@@ -1,6 +1,13 @@
 <div class="container">
 	<section class="button-header">
-		<p>Control Factory: A Factory Pattern Demo</p>
+		<h4>A Factory Pattern Demo</h4>
+		<p>
+			This module uses a service (singleton) that instantiates instances of IFormControl transparently to a client.
+			The 'FormControlComponent' is the entry point for a client component, that allows a client to
+			simply put this control in their view, and hook up inputs and outputs to the component. The FormControlComponent
+			abstracts all the functionality of the factory away, and based on the 'control' instance, the correct
+			concrete of an IFormControl is instantiated.
+		</p>
 		<button (click)="addControl('TextControl')">Add Text Control</button>&nbsp;
 		<button (click)="addControl('NumericControl')">Add Numeric Control</button>&nbsp;
 		<button (click)="addControl('DateControl')">Add Date Control</button>&nbsp;
