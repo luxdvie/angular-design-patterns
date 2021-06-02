@@ -1,0 +1,26 @@
+:host {
+	::ng-deep {
+		.row {
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 10px;
+
+			.label {
+				width: 100px;
+				flex-grow: 0;
+			}
+
+			.field {
+				flex-grow: 1;
+			}
+		}
+	}
+}
+
+.container {
+	padding: 20px;
+}
+
+.button-header {
+	margin-bottom: 20px;
+}

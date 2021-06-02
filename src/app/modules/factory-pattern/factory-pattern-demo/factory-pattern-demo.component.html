@@ -1,0 +1,13 @@
+<div class="container">
+	<section class="button-header">
+		<p>Control Factory: A Factory Pattern Demo</p>
+		<button (click)="addControl('TextControl')">Add Text Control</button>&nbsp;
+		<button (click)="addControl('NumericControl')">Add Numeric Control</button>&nbsp;
+		<button (click)="addControl('DateControl')">Add Date Control</button>&nbsp;
+		<button (click)="focusControl(1)">Focus Control #1</button>&nbsp;
+		<button (click)="focusControl(2)">Focus Control #2</button>&nbsp;
+		<button (click)="focusControl(3)">Focus Control #3</button>&nbsp;
+	</section>
+
+	<div #containerList *ngFor="let control of controls"></div>
+</div>
